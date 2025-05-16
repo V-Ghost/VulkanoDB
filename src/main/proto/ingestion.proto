@@ -6,12 +6,24 @@ option java_package = "vulkano";
 option java_multiple_files = true;
 option java_outer_classname = "IngestionProto";
 
+message HandshakeRequest {
+  string client_id = 1;
+  string stream_id = 2;
+  bool use_compression = 3;
+}
+
+message HandshakeResponse {
+  bool accepted = 1;
+  string message = 2;
+}
+
+
 service IngestionService {
   rpc StreamIngest(stream IngestRequest) returns (IngestResponse);
+  rpc Handshake(HandshakeRequest) returns (HandshakeResponse);
 }
 
 message IngestRequest {
-  string stream_id = 1;
   bytes payload = 2;
   int64 timestamp = 3;
 }

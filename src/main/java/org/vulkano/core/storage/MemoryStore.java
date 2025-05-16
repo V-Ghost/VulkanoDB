@@ -35,7 +35,7 @@ public class MemoryStore implements Runnable {
         // lifecycle management for the stream (optional async logic here)
     }
     public void destroy() {
-        // cleanup logic: ringBuffer.destroy(), flush to disk, etc.
+        ringBuffer.destroy();
     }
 
 }

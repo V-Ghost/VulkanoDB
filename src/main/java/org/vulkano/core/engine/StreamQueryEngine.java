@@ -8,7 +8,7 @@ package org.vulkano.core.engine;
 import org.vulkano.core.model.engine.QueryResult;
 
 
-public class StreamEngine implements EngineOps {
+public class StreamQueryEngine implements QueryEngine {
     @Override
     public QueryResult execute(String queryText) {
         return null;

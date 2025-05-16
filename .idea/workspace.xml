@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="765644df-2f4e-4192-9c56-117968aebfc7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/IngestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/client/VulkanoGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/client/VulkanoGrpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/EngineOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/QueryEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/StreamEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/StreamQueryEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/MemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/MemoryStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/RingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/server/VulkanoGrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/VulkanoGrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/ingestion.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/ingestion.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

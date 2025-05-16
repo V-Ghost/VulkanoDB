@@ -9,7 +9,7 @@ public class RingBuffer {
     private final int capacity;
     private int head = 0;
     private int tail = 0;
-    private final ByteBuffer buffer;
+    private  ByteBuffer buffer;
 
     public RingBuffer(int capacity) {
         this.capacity = capacity;
@@ -40,5 +40,15 @@ public class RingBuffer {
 
     public int size() {
         return head >= tail ? head - tail : capacity - tail + head;
+    }
+
+    public void destroy(){
+        buffer.clear(); // Clear the internal queue
+        head = 0;
+        tail = 0;
+        // Optionally null out buffer to help GC
+        buffer = null;
+
+        System.out.println("RingBuffer destroyed.");
     }
 }
