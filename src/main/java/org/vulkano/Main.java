@@ -1,7 +1,10 @@
 package org.vulkano;
 
+import org.vulkano.core.engine.StreamEngine;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        StreamEngine streamEngine = new StreamEngine();
+        streamEngine.shutdown();
     }
 }
