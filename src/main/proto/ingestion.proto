@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package vulkano;
+
+option java_package = "vulkano";
+option java_multiple_files = true;
+option java_outer_classname = "IngestionProto";
+
+service IngestionService {
+  rpc StreamIngest(stream IngestRequest) returns (IngestResponse);
+}
+
+message IngestRequest {
+  string stream_id = 1;
+  bytes payload = 2;
+  int64 timestamp = 3;
+}
+
+message IngestResponse {
+  string status = 1;
+}

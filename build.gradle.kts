@@ -24,6 +24,8 @@ dependencies {
     implementation("io.grpc:grpc-protobuf:1.63.0")
     implementation("io.grpc:grpc-stub:1.63.0")
     implementation("com.google.protobuf:protobuf-java:3.25.3")
+
+    implementation("javax.annotation:javax.annotation-api:1.3.2")
 }
 
 application {
@@ -32,6 +34,10 @@ application {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 protobuf {

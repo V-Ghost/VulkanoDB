@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="765644df-2f4e-4192-9c56-117968aebfc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/model/storage/Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/MemoryStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/RingBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/utils/Compressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/utils/MemoryStoreConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vulkano/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build VulkanoDB.executor": "Run",
-    "Gradle.VulkanoDB [:Main.main()].executor": "Run",
-    "Gradle.VulkanoDB [run].executor": "Run",
-    "Kotlin script (Beta).build.gradle.kts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.gradlew.executor": "Run",
-    "git-widget-placeholder": "core/dev",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build VulkanoDB.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VulkanoDB [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VulkanoDB [run].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.gradlew.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;core/dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="VulkanoDB [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
