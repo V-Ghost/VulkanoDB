@@ -1,10 +1,10 @@
-# VulkanoDB 🚀
+# TarmacEngine 🚀
 
-**VulkanoDB** is a next-generation, memory-native, ACID-compliant database optimized for real-time data ingestion, streaming analytics, and semantic querying. Designed from the ground up for speed, scalability, and developer ergonomics, VulkanoDB enables constant-time ingestion, low-latency querying, and intelligent data routing between memory and disk.
+**TarmacEngine** is a next-generation, memory-native, ACID-compliant database optimized for real-time data ingestion, streaming analytics, and semantic querying. Designed from the ground up for speed, scalability, and developer ergonomics, TarmacEngine enables constant-time ingestion, low-latency querying, and intelligent data routing between memory and disk.
 
 ---
 
-## 🌋 Why VulkanoDB?
+## 🌋 Why TarmacEngine?
 
 - 🔥 **Memory-Native Ingestion**  
   Ultra-fast ingestion into in-memory  with byte-level precision and constant-time write/overwrite.
@@ -25,13 +25,13 @@
 
 ## 🔧 Architecture
 
-- `vulkano-core` – Core logic, memory management, ring buffer, and data models  
-- `vulkano-server` – WebSocket ingestion/query server  
-- `vulkano-client` – Java client for interacting with the ingestion API  
-- `vulkano-catalog` – Manages Vault-like metadata and semantic mappings  
-- `vulkano-disk` – Handles cold storage, Parquet chunking, and retrieval  
-- `vulkano-ml` – Plug in computation logic on streaming ingest  
-- `vulkano-nlp` – Semantic query translation and execution (optional)  
+- `Tarmac-core` – Core logic, memory management, ring buffer, and data models  
+- `Tarmac-server` – WebSocket ingestion/query server  
+- `Tarmac-client` – Java client for interacting with the ingestion API  
+- `Tarmac-catalog` – Manages Vault-like metadata and semantic mappings  
+- `Tarmac-disk` – Handles cold storage, Parquet chunking, and retrieval  
+- `Tarmac-ml` – Plug in computation logic on streaming ingest  
+- `Tarmac-nlp` – Semantic query translation and execution (optional)  
 
 ---
 
@@ -47,8 +47,8 @@
 ### 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/vulkano-db/vulkanodb.git
-cd vulkanodb
+git clone https://github.com/Tarmac-db/TarmacEngine.git
+cd TarmacEngine
 ```
 
 ### ⚙️ Build the Project
@@ -60,13 +60,13 @@ cd vulkanodb
 To build a specific module:
 
 ```bash
-./gradlew :vulkano-server:build
+./gradlew :Tarmac-server:build
 ```
 
-### 🚦 Run the Vulkano Server
+### 🚦 Run the Tarmac Server
 
 ```bash
-./gradlew :vulkano-server:run
+./gradlew :Tarmac-server:run
 ```
 
 The server will:
@@ -76,7 +76,7 @@ The server will:
 
 ### 🧪 Try Ingesting Data
 
-You can use the `vulkano-client` module to simulate a client:
+You can use the `Tarmac-client` module to simulate a client:
 
 ```java
 HandshakeRequest req = HandshakeRequest.newBuilder()
@@ -116,7 +116,7 @@ stub.handshake(req, new StreamObserver<>() {
 ## 📜 License – Business Source License 1.1 (BSL 1.1)
 
 **Licensor**: Bryan Vukania  
-**Licensed Work**: VulkanoDB source code and related materials  
+**Licensed Work**: TarmacEngine source code and related materials  
 **Change Date**: January 1, 2028  
 **Change License**: Apache License, Version 2.0
 
