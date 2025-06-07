@@ -4,7 +4,7 @@ plugins {
     id("com.google.protobuf") version "0.9.4"
 }
 
-group = "org.vulkano"
+group = "org.Tarmac"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -29,7 +29,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("org.vulkano.Main")
+    mainClass.set("org.Tarmac.Main")
 }
 
 tasks.test {

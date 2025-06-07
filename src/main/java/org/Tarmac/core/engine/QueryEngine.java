@@ -1,6 +1,6 @@
-package org.vulkano.core.engine;
+package org.Tarmac.core.engine;
 
-import org.vulkano.core.model.engine.QueryResult;
+import org.Tarmac.core.model.engine.QueryResult;
 
 public interface QueryEngine {
     QueryResult execute(String queryText);

@@ -1,4 +1,4 @@
-package org.vulkano.core.utils;
+package org.Tarmac.core.utils;
 
 public class MemoryStoreConfig {
     public final int ringBufferSize;

@@ -1,13 +1,13 @@
-package org.vulkano.client;
+package org.Tarmac.client;
 
 
 import com.google.protobuf.ByteString;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import vulkano.*;
+import Tarmac.*;
 
-public class VulkanoGrpcClient {
+public class TarmacGrpcClient {
     public static void main(String[] args) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 9090)
                 .usePlaintext()

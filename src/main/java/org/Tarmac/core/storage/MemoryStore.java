@@ -1,6 +1,6 @@
-package org.vulkano.core.storage;
+package org.Tarmac.core.storage;
 
-import org.vulkano.core.utils.MemoryStoreConfig;
+import org.Tarmac.core.utils.MemoryStoreConfig;
 
 
 
@@ -25,9 +25,9 @@ public class MemoryStore implements Runnable {
 
     }
 
+
     public byte[] readNext() {
-        byte value = ringBuffer.read();
-        return new byte[]{value}; // placeholder
+        return ringBuffer.read(1);
     }
 
     @Override

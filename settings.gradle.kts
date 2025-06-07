@@ -1,2 +1,2 @@
-rootProject.name = "VulkanoDB"
+rootProject.name = "TarmacEngine"
 

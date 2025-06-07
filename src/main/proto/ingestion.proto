@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package vulkano;
+package Tarmac;
 
-option java_package = "vulkano";
+option java_package = "Tarmac";
 option java_multiple_files = true;
 option java_outer_classname = "IngestionProto";
 

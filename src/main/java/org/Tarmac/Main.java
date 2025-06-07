@@ -1,7 +1,7 @@
-package org.vulkano;
+package org.Tarmac;
 
-import org.vulkano.client.VulkanoGrpcClient;
-import org.vulkano.server.VulkanoGrpcServer;
+import org.Tarmac.client.TarmacGrpcClient;
+import org.Tarmac.server.TarmacGrpcServer;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -11,8 +11,8 @@ public class Main {
         }
 
         switch (args[0]) {
-            case "server" -> VulkanoGrpcServer.main(new String[0]);
-            case "client" -> VulkanoGrpcClient.main(new String[0]);
+            case "server" -> TarmacGrpcServer.main(new String[0]);
+            case "client" -> TarmacGrpcClient.main(new String[0]);
             default -> System.out.println("Unknown mode: " + args[0]);
         }
     }

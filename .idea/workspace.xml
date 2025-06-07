@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="765644df-2f4e-4192-9c56-117968aebfc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/model/engine/QueryResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/client/TarmacGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/client/VulkanoGrpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/engine/QueryEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/QueryEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/engine/StreamQueryEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/engine/StreamQueryEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/model/engine/QueryResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/model/storage/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/model/storage/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/storage/MemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/MemoryStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/storage/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/storage/RingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/utils/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/utils/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/utils/MemoryStoreConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/core/utils/MemoryStoreConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/server/IngestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/IngestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/server/TarmacGrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vulkano/server/VulkanoGrpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/ingestion.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/ingestion.proto" afterDir="false" />
-    </list>
+    <list default="true" id="765644df-2f4e-4192-9c56-117968aebfc7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,8 +68,9 @@
     "Kotlin script (Beta).build.gradle.kts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Shell Script.gradlew.executor": "Run",
-    "git-widget-placeholder": "chore/rename-to-tarmac-engine",
+    "git-widget-placeholder": "core/dev",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bryanvukania/Desktop/CodeStore/TarmacEngine",
     "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
