@@ -1,4 +1,4 @@
-package org.Tarmac.core.model.storage;
+package org.tarmac.core.model.storage;
 
 import java.time.LocalDateTime;
 

@@ -1,7 +1,7 @@
-package org.Tarmac;
+package org.tarmac;
 
-import org.Tarmac.client.TarmacGrpcClient;
-import org.Tarmac.server.TarmacGrpcServer;
+import org.tarmac.client.TarmacGrpcClient;
+import org.tarmac.server.TarmacGrpcServer;
 
 public class Main {
     public static void main(String[] args) throws Exception {

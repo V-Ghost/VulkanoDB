@@ -1,11 +1,11 @@
-package org.Tarmac.core.engine;
+package org.tarmac.core.engine;
 /*
  *handles when to transfer to disk
  *
  */
 
 
-import org.Tarmac.core.model.engine.QueryResult;
+import org.tarmac.core.model.engine.QueryResult;
 
 
 public class StreamQueryEngine implements QueryEngine {

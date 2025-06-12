@@ -1,4 +1,4 @@
-package org.Tarmac.core.utils;
+package org.tarmac.core.utils;
 
 import java.io.IOException;
 

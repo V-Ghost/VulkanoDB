@@ -1,11 +1,11 @@
-package org.Tarmac.client;
+package org.tarmac.client;
 
 
+import Tarmac.*;
 import com.google.protobuf.ByteString;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-import Tarmac.*;
 
 public class TarmacGrpcClient {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.Tarmac.core.storage;
+package org.tarmac.core.storage;
 
 import java.nio.ByteBuffer;
 

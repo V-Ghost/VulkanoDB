@@ -1,4 +1,4 @@
-package org.Tarmac.server;
+package org.tarmac.server;
 
 import io.grpc.stub.StreamObserver;
 import Tarmac.*;

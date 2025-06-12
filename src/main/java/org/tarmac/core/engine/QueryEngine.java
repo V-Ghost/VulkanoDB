@@ -1,6 +1,6 @@
-package org.Tarmac.core.engine;
+package org.tarmac.core.engine;
 
-import org.Tarmac.core.model.engine.QueryResult;
+import org.tarmac.core.model.engine.QueryResult;
 
 public interface QueryEngine {
     QueryResult execute(String queryText);

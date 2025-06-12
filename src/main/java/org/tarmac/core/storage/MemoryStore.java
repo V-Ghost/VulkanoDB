@@ -1,6 +1,6 @@
-package org.Tarmac.core.storage;
+package org.tarmac.core.storage;
 
-import org.Tarmac.core.utils.MemoryStoreConfig;
+import org.tarmac.core.utils.MemoryStoreConfig;
 
 
 
