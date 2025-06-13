@@ -9,7 +9,7 @@ public class TarmacGrpcServer {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         Server server = ServerBuilder.forPort(9090)
-                .addService(new IngestionServiceImpl())
+                .addService(new IngestionService())
                 .build();
 
         System.out.println("Tarmac gRPC server started on port 9090");

@@ -20,7 +20,7 @@ public class TarmacGrpcClient {
 
         HandshakeRequest request = HandshakeRequest.newBuilder()
                 .setClientId("client-001")
-                .setStreamId("stream-sensor-a")
+                .setStreamId("fraud-alerts1")
                 .setUseCompression(false)
                 .build();
 

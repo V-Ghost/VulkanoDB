@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="765644df-2f4e-4192-9c56-117968aebfc7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/engine/StreamManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/model/storage/MemoryStoreConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/model/storage/StorageStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/ByterBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/DiskBuffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/client/TarmacGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/client/TarmacGrpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/engine/QueryEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/engine/QueryEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/engine/StreamQueryEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/engine/StreamQueryEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/model/engine/QueryResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/model/engine/QueryResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/model/storage/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/model/storage/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/storage/MemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/MemoryStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/storage/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/RingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/utils/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/utils/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/core/utils/MemoryStoreConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/utils/MemoryStoreConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/server/IngestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/server/IngestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Tarmac/server/TarmacGrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/server/TarmacGrpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/tarmac/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/tarmac/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/org/tarmac/client/TarmacGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/org/tarmac/client/TarmacGrpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/MemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/MemoryStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/core/storage/RingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/core/utils/MemoryStoreConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/server/IngestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/server/IngestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tarmac/server/TarmacGrpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tarmac/server/TarmacGrpcServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,7 +79,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Client.executor": "Run",
     "Gradle.Build VulkanoDB.executor": "Run",
+    "Gradle.TarmacEngine [:Main.main()].executor": "Run",
+    "Gradle.TarmacEngine:client [:client:Main.main()].executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "Gradle.VulkanoDB [:Main.main()].executor": "Run",
     "Gradle.VulkanoDB [run].executor": "Run",
     "Kotlin script (Beta).build.gradle.kts.executor": "Run",
@@ -91,7 +95,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "settings.sync"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,29 +104,42 @@
       <recent name="$PROJECT_DIR$/client/src/main" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="VulkanoDB [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="24 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.tarmac.Main" />
+      <module name="TarmacEngine.client.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="24 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.tarmac.Main" />
+      <module name="TarmacEngine.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TarmacDB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TarmacDB" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -1,9 +1,11 @@
 package org.tarmac.server;
 
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import Tarmac.*;
+import org.tarmac.core.engine.StreamManager;
 
-public class IngestionServiceImpl extends IngestionServiceGrpc.IngestionServiceImplBase {
+public class IngestionService extends IngestionServiceGrpc.IngestionServiceImplBase {
     @Override
     public void handshake(
             HandshakeRequest request,
@@ -11,10 +13,16 @@ public class IngestionServiceImpl extends IngestionServiceGrpc.IngestionServiceI
     ) {
         String streamId = request.getStreamId();
 
-        // Example: create MemoryStore for stream
-//        if (!MemoryStoreRegistry.exists(streamId)) {
-//            MemoryStoreRegistry.create(streamId);
-//        }
+
+        if (!StreamManager.isRegistered(streamId)) {
+            responseObserver.onError(
+                    Status.INVALID_ARGUMENT
+                            .withDescription("Invalid stream ID: not found on this node.")
+                            .asRuntimeException()
+            );
+            return;
+
+        }
         System.out.println("StreamID: " +" - " + streamId);
         HandshakeResponse response = HandshakeResponse.newBuilder()
                 .setAccepted(true)

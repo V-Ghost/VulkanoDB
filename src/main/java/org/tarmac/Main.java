@@ -1,19 +1,36 @@
 package org.tarmac;
 
 import org.tarmac.client.TarmacGrpcClient;
+import org.tarmac.core.engine.StreamManager;
+import org.tarmac.core.model.storage.MemoryStoreConfig;
 import org.tarmac.server.TarmacGrpcServer;
 
+import java.io.IOException;
+
+import static org.tarmac.core.engine.StreamManager.restoreStreams;
+
 public class Main {
-    public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
-            System.out.println("Usage: ./gradlew run --args=\"server\" or \"client\"");
+    public static void main(String[] args) throws InterruptedException {
+        if (args.length > 1 && args[0].equals("--create-stream")) {
+            String streamId = args[1];
+            StreamManager.createStream(new MemoryStoreConfig.Builder(streamId).build());
+            System.out.println("Stream created: " + streamId);
             return;
         }
 
-        switch (args[0]) {
-            case "server" -> TarmacGrpcServer.main(new String[0]);
-            case "client" -> TarmacGrpcClient.main(new String[0]);
-            default -> System.out.println("Unknown mode: " + args[0]);
+        // Normal server startup
+        StreamManager.restoreStreams(); // <- auto-run previously created streams
+        try {
+            TarmacGrpcServer.main(new String[0]);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+        // Start gRPC server here
+        System.out.println("Tarmac Server running...");
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.println("Shutdown triggered. Cleaning up...");
+            // StreamManager.shutdownAll(); // e.g., call destroy() on all memory stores
+        }));
     }
 }

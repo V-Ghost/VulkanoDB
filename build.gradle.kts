@@ -2,6 +2,7 @@ plugins {
     id("java")
     id("application")
     id("com.google.protobuf") version "0.9.4"
+    id("com.github.ben-manes.versions") version "0.51.0"
 }
 
 group = "org.tarmac"

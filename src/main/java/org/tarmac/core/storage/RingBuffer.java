@@ -1,12 +1,10 @@
 package org.tarmac.core.storage;
 
-import java.nio.ByteBuffer;
-
 /**
  * A fixed-size ring buffer (circular buffer) for storing bytes.
  * Supports byte-level writes and sequential reads with wrap-around.
  */
-public class RingBuffer {
+public class RingBuffer implements ByteBuffer {
 
     /** Total Capacity of ring buffer */
     private final int capacity;
@@ -18,7 +16,7 @@ public class RingBuffer {
     private int read = -1;
 
     /** Underlying storage for the ring buffer */
-    private ByteBuffer buffer;
+    private java.nio.ByteBuffer buffer;
 
     /**
      * Constructor to initialize buffer with given capacity
@@ -27,7 +25,7 @@ public class RingBuffer {
      */
     public RingBuffer(int capacity) {
         this.capacity = capacity;
-        this.buffer = ByteBuffer.allocate(capacity);
+        this.buffer = java.nio.ByteBuffer.allocate(capacity);
     }
 
     /**
@@ -36,8 +34,8 @@ public class RingBuffer {
      *
      * @param record the byte to write
      */
+    @Override
     public void write(byte record) {
-
         if (read != -1) {
             read = (head + 1) % capacity;
         }
@@ -58,6 +56,7 @@ public class RingBuffer {
      * @return an array of bytes read from the buffer
      * @throws IllegalArgumentException if {@code size} is less than 1
      */
+    @Override
     public byte[] read(int size) {
         if (size < 1) {
             throw new IllegalArgumentException("Size is less than 1");
@@ -88,6 +87,7 @@ public class RingBuffer {
      *
      * @return {@code true} if no data is available to read; {@code false} otherwise
      */
+    @Override
     public boolean isEmpty() {
         return read == head;
     }
@@ -97,20 +97,20 @@ public class RingBuffer {
      *
      * @return number of readable bytes in the buffer
      */
+    @Override
     public int getSize() {
         if (read == -1 ) {
             return head;
         }
 
-
         return capacity - (read - head);
-
     }
 
     /**
      * Destroys the buffer and resets its internal state.
      * Useful for releasing resources and clearing memory.
      */
+    @Override
     public void destroy() {
         buffer.clear();
         head = 0;

@@ -1,7 +1,9 @@
 package org.tarmac;
 
+import org.tarmac.client.TarmacGrpcClient;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        TarmacGrpcClient.main(new String[0]);
     }
 }
